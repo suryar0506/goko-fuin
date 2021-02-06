@@ -1,0 +1,22 @@
+body
+{
+	background-image: url("login_background.jpg");
+}
+#heading{
+	color: red;
+}
+
+	.name_div1 , .name_div2
+	{
+		background: white;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+	}
+
+
+#student1_input, #student2_input
+{
+	display: inline-block;
+	margin-left: 5px;
+}
