@@ -1,5 +1,6 @@
 var student_1_score = 0;
 var student_2_score = 0;
+var send_check = 0;
 var student1name = localStorage.getItem("Student 1");
 var student2name = localStorage.getItem("Student 2");
 function getInitialValues(){
@@ -11,6 +12,8 @@ document.getElementById("quizzer_2_score").innerHTML ="<h2>" +  student_2_score 
 
 document.getElementById("question_turn").innerHTML = "<h2>" + "Question Turn : " + student1name + "</h2>";
 document.getElementById("answer_turn").innerHTML = "<h2>" + "Answer Turn : " + student2name + "</h2>";
+
+document.getElementById("question_turn").style.color = "red";
 }
 
 function send(){
@@ -26,14 +29,19 @@ document.getElementById("output").innerHTML = complete_puzzle;
 
 document.getElementById("number1_text_input").value = null;
 document.getElementById("number2_text_input").value = null;
+question_container = document.getElementById("question_container");
+question_container.style.display = 'none';
 
+document.getElementById("answer_turn").style.color = "red";
+document.getElementById("question_turn").style.color = "yellow";
 }
+
 var question_turn = "Student 1";
 var answer_turn = "Student 2";
 function check(){
 student_answer = document.getElementById("input_answer_box").value;
 if (student_answer == product){
-    if(answer_turn = "Student 1"){
+    if(answer_turn == "Student 1"){
 student_1_score = student_1_score + 1;
 console.log(student_1_score);
 document.getElementById("quizzer_1_score").innerHTML ="<h3>" + student_1_score  + "</h3>";
@@ -44,7 +52,7 @@ document.getElementById("quizzer_2_score").innerHTML ="<h3>" + student_2_score  
     }
 }
 
-if (question_turn = "Student 1"){
+if (question_turn == "Student 1"){
     question_turn = "Student 2";
     document.getElementById("question_turn").innerHTML = "<h2>" + "Question Turn : " + student2name + "</h2>";
 } else {
@@ -52,7 +60,7 @@ if (question_turn = "Student 1"){
     document.getElementById("question_turn").innerHTML = "<h2>" + "Question Turn : " + student1name + "</h2>";
 }
 
-if (answer_turn = "Student 1"){
+if (answer_turn == "Student 1"){
     answer_turn = "Student 2";
     document.getElementById("answer_turn").innerHTML = "<h2>" + "Answer Turn : " + student2name + "</h2>";
 } else {
@@ -60,4 +68,9 @@ if (answer_turn = "Student 1"){
     document.getElementById("answer_turn").innerHTML = "<h2>" + "Answer Turn : " + student1name + "</h2>";
 }
 document.getElementById("output").innerHTML = "";
+question_container = document.getElementById("question_container");
+question_container.style.display = 'block';
+
+document.getElementById("question_turn").style.color = "red";
+document.getElementById("answer_turn").style.color = "yellow";
 }

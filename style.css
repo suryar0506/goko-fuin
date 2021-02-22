@@ -40,8 +40,7 @@ margin-right:50px;
 }
 #quiz_head{
 	border-radius: 10px;
-	margin-left:50px;
-	margin-right:50px;
+	width: 1000px;
 }
 #quiz_taker_1{
 	color: yellow;

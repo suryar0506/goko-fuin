@@ -12,32 +12,28 @@
         <script src="q_and_a.js"></script>
     </head>
     <body onload = "getInitialValues()">
-<h2 id = "quiz_taker_1"></h2><span id = "quizzer_1_score"></span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h2 id = "quiz_taker_1"></h2><span id = "quizzer_1_score"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <h2 id = "quiz_taker_2"></h2><span id = "quizzer_2_score"></span>
         <center>
     <br>
-    <div id = "quiz_head" style = "background-color: red; color: white; text-align: center !important; font-size: 60px;">Math Quiz. Dun! Dun! Duuun!</div>
+<div id = "quiz_head" style = "background-image: url('number_banner.jpg'); color: white; text-align: center !important; font-size: 60px; height: 175px;background-repeat: no-repeat;">.</div>
     <br>
+    <h2 style = "color:yellow;" id = "question_turn"></h2>
     <br>
-    <h2 id = "question_turn"></h2>
-    <br>
-    <h2 id = "answer_turn"></h2>
+    <h2 style = "color:yellow;" id = "answer_turn"></h2>
     <br>
     <div id = "output"></div>
     <br>
-    <br>
-    <div class = "container">
-    <h2>Numero Uno</h2>
+    <div id = "question_container" class = "container">
+    <h2 style = "color:yellow;" id = "number1_title">Numero Uno</h2>
     <br>
     <input id = "number1_text_input" class = "form-control" type="number" placeholder="Type a number">
     <br>
-    <br>
-    <h2>Numero Dos</h2>
+    <h2 style = "color:yellow;" id = "number2_title">Numero Dos</h2>
     <br>
     <input id = "number2_text_input" class = "form-control" type="number" placeholder="Type the second number">
     <br>
-    <br>
-    <button class = "btn btn-success" onclick="send()">Send</button>
+    <button id = "send_button" style = "width:150px;font-size: large;" class = "btn btn-success" onclick="send()">Send</button>
     </div>
         </center>
     </body>
